@@ -1,6 +1,8 @@
 # Steganography Tool 
 *Very old project from time when I was learning C++ and basics of steganography concepts*
 
+![Steganography Tool Screenshot](assets/screenshot.png)
+
 A command-line steganography tool that allows you to hide secret messages inside image files using the LSB (Least Significant Bit) technique.
 
 ## Features
@@ -50,9 +52,22 @@ The executable will be created as `steganography` in the build directory.
 - **PPM** (.ppm) - P3 (ASCII) and P6 (Binary) Portable Pixmap  
 - **GIF** (.gif) - GIF87a and GIF89a with global color table
 
+## Project Structure
+
+```
+steganography/
+├── src/                 # Source files (.cpp)
+├── include/             # Header files (.hpp)  
+├── Steganography/       # Test images
+├── build/               # Build output
+└── CMakeLists.txt       # Build config
+```
+
 ## Limitations
 
 - **GIF files**: Limited message capacity (hardcoded to 768 bits)
 - **No encryption**: Messages are hidden but not encrypted
 
-**Disclaimer**: This is one of my oldest projects and may contain some pretty bad code. It was created for learning C++ and basics of steganography concepts.
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
